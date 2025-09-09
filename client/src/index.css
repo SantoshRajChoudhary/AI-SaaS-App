@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Outfit:wght@100..900&family=Roboto:wght@100..900&display=swap');
+
+@import "tailwindcss";
+
+
+
+* {
+     font-family: "Outfit", sans-serif;
+}
+
+
+
+@theme {
+    --color-primary: #5044E5;
+}
+
+.reset-tw, .reset-tw *{
+  all: revert !important;
+}
+
+/* html, body {
+  overscroll-behavior: none;    disables bounce entirely 
+} */

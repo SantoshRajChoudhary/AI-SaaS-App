@@ -1,12 +1,11 @@
-import { neon } from "@neondatabase/serverless";
-// Ensure DATABASE_URL is defined
-if (!process.env.DATABASE_URL) {
-  console.log("dotenv loaded PORT:", process.env.PORT);
-  console.log("dotenv loaded DATABASE_URL:", process.env.DATABASE_URL);
+import {v2 as cloudinary} from 'cloudinary'
 
-  throw new Error("❌ DATABASE_URL is not defined. Did you set it in your .env file?");
+
+const connectCloudinary=async()=>{
+    cloudinary.config({
+        cloud_name:process.env.CLOUDINARY_CLOUD_NAME,
+        api_key:process.env.CLOUDINARY_API_KEY,
+        api_secret:process.env.CLOUDINARY_API_SECRET,
+    });
 }
-
-const sql = neon(process.env.DATABASE_URL);
-
-export default sql;
+export default connectCloudinary;

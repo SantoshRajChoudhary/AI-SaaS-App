@@ -1,11 +1,19 @@
-import Navbar from "./Navbar";
-import Sidebar from "./Sidebar";
-import AiTools from "./AiTools"
+import AiTools from "./AiTools";
 import CreationItem from "./CreationItem";
-import Footer from "./Footer"
-import Hero from './Hero'
-import Plan from './Plan'
-import Testimonial from './Testimonial'
+import Footer from "./Footer";
+import Hero from "./Hero";
+import Navbar from "./Navbar";
+import Plan from "./Plan";
+import Sidebar from "./Sidebar";
+import Testimonial from "./Testimonial";
 
-
-export {Navbar, Sidebar, AiTools, CreationItem, Footer, Hero, Plan, Testimonial}
+export {
+  AiTools,
+  CreationItem,
+  Footer,
+  Hero,
+  Navbar,
+  Plan,
+  Sidebar,
+  Testimonial,
+};
